@@ -119,6 +119,10 @@ func rootCmd(cmd *cobra.Command, args []string) {
 			continue
 		}
 	}
+	// cleanup build dir
+	if sc.DirExists(buildDir) {
+		os.RemoveAll(buildDir)
+	}
 }
 
 func evaluateTemplates(path string, data interface{}) error {
