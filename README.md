@@ -5,6 +5,13 @@ Siehe auch [lualatex-brief](https://github.com/jojomi/lualatex-brief) für eine 
 Die Template-Syntax von [go](https://golang.org) kann in `tex`- und `lco`-Dateien innerhalb des Template-Ordners verwendet werden. Ein kleines Tutorial findet sich [hier](https://themes.gohugo.io/theme/minimal/post/goisforlovers/). Verfügbar sind dort alle Spalten aus der `csv`-Datei, die als Datenquelle dient. Diese benötigt eine Kopfzeile mit Spaltentiteln.
 
 
+## Installation
+
+In einer laufenden Go-Umgebung:
+
+    go get -u github.com/jojomi/lualatex-serienbrief
+
+
 ## Verwendung
 
 ```
