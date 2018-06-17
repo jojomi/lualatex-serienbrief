@@ -72,6 +72,11 @@ func rootCmd(cmd *cobra.Command, args []string) {
 	fmt.Printf("Working dir %s...\n", workingDir)
 	fmt.Printf("Build dir %s...\n", buildDir)
 	for _, record := range records {
+		// filter empty csv lines
+		if record["Name"] == "" {
+			continue
+		}
+
 		print.Boldf("Processing %s...\n", record["Name"])
 
 		// copy template folder
